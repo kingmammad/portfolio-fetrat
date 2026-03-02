@@ -94,7 +94,7 @@ export const Portfolio = (): JSX.Element => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 relative z-10">
           {filteredProjects.map((project, index) => (
             <article
-              key={project.id}
+              key={index}
               className={`group relative flex flex-col overflow-hidden rounded-[32px] bg-[#111113] border border-white/10 hover:border-[#ebff57]/40 transition-all duration-500 ${
                 project.featured ? "lg:col-span-8 md:row-span-2" : "lg:col-span-4"
               }`}
